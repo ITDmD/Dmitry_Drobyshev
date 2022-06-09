@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    
+    <meta charset="UTF-8">    
     <title>02. HTML. Таблицы</title>
 </head>
 <body>
-    
+    <table border="1" align="center" width="70%">
+        <caption><i>Прогноз погоды</i></caption> 
+        <tr>
+            <th>Город</th> <!--Сделал тегом 'th', так как этот тег используется для шапки таблицы (этот тег выделяет текст жирным шрифтом), но скорее всего в этом задании нужно было просто делать тегом 'td', центрировать и выделять жирным тегом 'b'-->
+            <th>Утро</th>
+            <th>День</th>
+            <th>Вечер</th>
+            <th>Ночь</th>
+        </tr>
+        <tr>
+            <td align="center"><b>Минск</b></td>
+            <td>-5<sup><small>о</small></sup></td> <!--Знак градуса ввёл с помощью тега 'sup' который делает надстрочный символ и тега 'small' для уменьшения размера символа-->
+            <td>+5<sup><small>о</small></sup></td> 
+            <td rowspan="2">+2<sup><small>o</small></sup></td> 
+            <td>-10&#xb0;</td>
+        </tr>
+        <tr>
+            <td align="center"><b>Брест</b></td>
+            <td>0&#xb0;</td> <!--Знак градуса ввёл с помощью мнемоника '&#xb0;'-->
+            <td>+9&#xb0;</td>
+            <td>-4&#xb0;</td>
+        </tr>
+    </table>
 </body>
 </html>
