@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Домашнее задание базовое: 03. HTML. Ссылки, Часть 2</title>
+    <style> body {display: block; margin-top: 70px; margin-right: 270px; margin-bottom: 70px; margin-left: 270px;};</style> 
+</head>
+<body>    
+
+        <img src="Icon-Python.png" alt="Icon Python" title="https://www.python.org" align="right">
+
+        <h1> HOW&hyphen;TO&colon; Программа на Python&comma; Часть 2</h1>
+        <ul>
+            <li><i><a href="./multimedia_01.html">Программа на Python — часть 1</a></i></li> 
+            <li><i><a href="./multimedia_02.html">Программа на Python — часть 2</a></i></li>
+            <li><i><a href="./multimedia_03.html">Программа на Python — часть 3</a></i></li> 
+        </ul>
+
+
+
+        <h2 id="content">Содержание</h2>  
+        <h3>HOW&hyphen;TO&colon; Программа на Python&comma; Часть 2</h3>
+        <ul>
+            <li><a href="#spiski">Списки</a></li>
+            <li><a href="#kommentarii">Комментарии</a></li>
+        </ul>
+        <hr>
+        <p> Впрошлом уроке мы рассмотрели простую программу&comma; которая использовала raw&lowbar;input
+            для получения ответа пользователя&comma; простые типы переменных и простой цикл &laquo;<b>for</b>&raquo;&period; В
+            этом уроке мы рассмотрим ещё больше типов переменных и напишем ещё больше
+            программ&period;
+        </p>
+        <h2 id="spiski">Списки</h2>
+        <p><a href="#content">К содержанию</a></p>
+        <p> Давайте рассмотрим другой тип переменных&comma; который называется <i>списки</i>&period; В других
+            языках программирования они называются <i>массивами</i>&period; Если мы обратимся к аналогии с
+            коробками для обуви&comma; то массив &lpar;список&rpar; представляет собой несколько склеенных друг с
+            другом коробок с одинаковыми вещами&period; Например&comma; в одной коробке лежат вилки&comma; в
+            другой &mdash; ножи&comma; в третьей &mdash; ложки&period; Посмотрим на простой список &mdash; список месяцев&period; Мы
+            запрограммируем его так&colon;
+        </p>
+        <br>    
+        <code>months &equals;<br>
+            &lbrack;&apos;Jan&apos;&comma;&apos;Feb&apos;&comma;&apos;Mar&apos;&comma;&apos;Apr&apos;&comma;&apos;May&apos;&comma;&apos;Jun&apos;&comma;&apos;Jul&apos;&comma;&apos;Aug&apos;&comma;&apos;Sep&apos;&comma;&apos;Oct&apos;&comma;&apos;Nov&apos;&comma;&apos;Dec&apos;&rbrack;
+        </code>
+        <p> Чтобы создать список&comma; мы заключили все значения в квадратные скобки &lpar; <b>&apos;&lbrack;&apos;</b> и <b>&apos;&rbrack;&apos;</b> &rpar;&period; Мы
+            назвали наш список &apos;<i>months</i>&apos;&period; Чтобы использовать список&comma; мы дадим команду print
+            <b>months&lbrack;0&rbrack;</b> или <b>months&lbrack;1&rbrack;</b> &lpar;которые выведут на экран &apos;<i>Jan</i>&apos; или &apos;<i>Feb</i>&apos;&rpar;&period; Помните&colon; счет
+            начинается с нуля&period; Чтобы найти длину списка&comma; можно использовать такую функцию&colon;
+        </p>
+        <code>print len&lpar;months&rpar;</code>
+        <p> которая вернёт 12&period;
+            <br>
+            <br>
+            Ещё один пример списков &mdash; категории в поваренной книге&period; Например&hellip;
+        </p>
+        <br>
+        <code>categories &equals; &lbrack;&apos;Main dish&apos;&comma;&apos;Meat&apos;&comma;&apos;Fish&apos;&comma;&apos;Soup&apos;&comma;&apos;Cookies&apos;&rbrack;
+        </code>
+        <p> Таким образом&comma; в <b>categories&lbrack;0&rbrack;</b> хранится &apos;<i>Main dish</i>&apos;&comma; а в <b>categories&lbrack;4&rbrack;</b> &mdash; &apos;<i>Cookies</i>&apos;&period; Всё
+            очень просто&period; Я уверен&comma; вы сможете придумать много других примеров использования
+            списков&period; 
+        </p>
+        <hr>
+        <h2 id="kommentarii">Комментарии</h2>
+        <p><a href="#content">К содержанию</a></p>
+        <p> Далее&comma; мы должны обсудить комментарии&period; Комментарии важны по нескольким причинам&period;
+            Они не только говорят вам или другим людям&comma; что вы пытаетесь делать&comma; но и напомнят
+            вам через полгода&comma; что же вы хотели сделать&period; Когда вы будете писать много программ&comma;
+            комментарии станут важными&period; Также при их помощи вы заставите Python игнорировать
+            какие-либо части кода&period; Чтобы закомментировать строку&comma; поставьте перед ней знак &apos;&num;&apos;&period;
+            Например&colon;
+        </p>
+
+        &num;
+        <p> Это комментарий
+            <br>
+            <br>
+            Комментарии можно вставлять в любое место в строке&comma; но помните&comma; что Python
+            проигнорирует всё&comma; что идёт после &apos;&num;&apos;&period;
+        </p>
+        <table width="100%">
+            <tr>
+                <td align="left">
+                    <a href="./multimedia_01.html"><img src="./previous_page.png" alt="Переход на предыдущую страницу" title="Переход на предыдущую страницу"></a>
+                </td>
+                <td align="center">
+                    <a href="#content"><img src="./up_main.png" alt="Переход к содержанию" title="Переход к содержанию"></a>
+                </td>
+                <td align="right">
+                    <a href="./multimedia_03.html"><img src="./next_page.png" alt="Переход на следующую страницу" title="Переход на следущую страницу"></a>
+                </td>           
+            </tr>
+        </table>
+</body>
+</html>
