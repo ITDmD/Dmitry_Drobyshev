@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03. HTML. Ссылки. Домашнее задание - дополнительное</title>
+    <style> body {display: block; margin-top: 70px; margin-right: 270px; margin-bottom: 70px; margin-left: 270px;};</style> 
+</head>
+<body>
+    <h2>Горизонтальное меню</h2>
+    
+        <a href="index.html">Главная</a> &VerticalSeparator;
+        <a href="catalog.html">Каталог</a> &VerticalSeparator;
+        <a href="promo.html">Акции</a> &VerticalSeparator;
+        <a href="about.html">О нас</a> 
+    <br>
+
+        <h2>Меню список</h2>
+
+    <ul>
+        <li><a href="index.html">Главная</a></li> 
+        <li><a href="catalog.html">Каталог</a></li> 
+        <li><a href="promo.html">Акции</a></li> 
+        <li><a href="about.html">О нас</a></li> 
+    </ul>
+
+    <h2>Меню с вложенным списком</h2>
+
+    <ul>
+        <li><a href="index.html">Главная</a>
+            <ul><li><a href="../News/news.html">Новости</a></li></ul>
+        </li>
+
+        <li><a href="catalog.html">Каталог</a></li>
+            <ul>
+                <li><a href="../Catalog/a-w.html">Осень-Зима</a></li>
+                <li><a href="../Catalog/s-s.html">Весна-Лето</a></li>
+            </ul> 
+        <li><a href="promo.html">Акции</a></li>
+            <ul>
+                <li><a href="../Promotions/actual.html">Актуальные</a></li>
+                <li><a href="../Promotions/past.html">Прошедшие</a></li>
+            </ul>
+        <li><a href="about.html">О нас</a></li> 
+            <ul>
+                <li><a href="../About/contacts.html">Контакты</a></li>
+                <li><a href="../About/scheme.html">Проезд</a></li>
+            </ul>
+    </ul>
+
+
+    <h2>Меню таблица с вложенными таблицами</h2>
+
+    <table>
+        <tr>
+            <td>
+                <a href="index.html">Главная</a>
+                <table>
+                    <tr>
+                        <td>
+                            <a href="../News/news.html">Новости</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <a href="catalog.html">Каталог</a>
+                <table>
+                    <tr>
+                        <td>
+                            <a href="../Catalog/a-w.html">Осень-Зима</a><br>
+                            <a href="../Catalog/s-s.html">Весна-Лето</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <a href="promo.html">Акции</a>
+                <table>
+                    <tr>
+                        <td>
+                            <a href="../Promotions/actual.html">Актуальные</a><br>
+                            <a href="../Promotions/past.html">Прошедшие</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <a href="/Lesson_3/Dop/site.by/about.html" target="_blank">О нас</a>
+                <table>
+                    <tr>
+                        <td>
+                            <a href="/Lesson_3/Dop/site.by/About/contacts.html" target="_blank">Контакты</a><br>
+                            <a href="/Lesson_3/Dop/site.by/About/scheme.html" target="_blank">Проезд</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
