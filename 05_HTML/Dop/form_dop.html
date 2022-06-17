@@ -39,7 +39,7 @@
             <option value="november">Ноябрь</option>
             <option value="december">Декабрь</option></select>
             select: Месяц рождения<br>
-            <input type="text" size="4" name="date_of_birth" maxlength="2" pattern="\d{1,31}$">
+            <input type="number" min="1" max="31" step="1" size="4" name="date_of_birth" maxlength="2" >
             number: Диапазон от 1 до 31 с шагом 1<br></fieldset>
         <select name="nationality" required>
         <option value="belarus">РБ</option>
