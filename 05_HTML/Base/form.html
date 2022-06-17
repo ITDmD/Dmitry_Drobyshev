@@ -120,7 +120,7 @@
         <input type="text" name="validation_name" pattern="^[А-Яа-яЁё\s]+$" placeholder="Только русские буквы"><br>                                 
         <i>Телефонный номер в формате<br>
             +ХХХ-ХХ-ХХХХХХХ, где Х - любое число</i><br>
-        <input type='tel' name="validation_phone" placeholder="+375-29-1234567"><br>
+        <input type='tel' name="validation_phone" pattern="[+]\d{3}-\d{2}-\d{7}$" placeholder="+375-29-1234567"><br>
         <input type="submit" value="Проверить">
         </fieldset></form></td></tr>
 </table>                     
