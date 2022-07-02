@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03. CSS. Адаптивная навигация
+        Домашнее задание - базовое</title>
+</head>
+<style>
+ul {
+  padding-left: 0;
+}
+li {
+  background: gainsboro;
+  color: gray;
+  line-height:25px;
+  display: block;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100px;
+}
+li:hover {
+  background: gray;
+  color: gainsboro;
+}
+li {
+  float:left;
+}
+li > ul {
+    position:absolute;
+    display:none;
+}
+li:hover > ul {
+    display:block;
+}
+li:hover > ul > li {
+    float:none;
+}
+@media all and (max-width: 628px) {
+    li > ul {
+    position:absolute;
+    display:none;
+    margin-left: 150px;
+    margin-top: -26px;
+}
+li {
+  float:none;
+  width: 150px;
+}
+}
+</style>
+<body>
+    <ul>
+        <li>Понедельник
+            <ul>
+                <li>Завтрак</li>
+                <li>Обед</li>
+                <li>Ужин</li>
+            </ul>
+        </li>  
+        <li>Вторник
+            <ul>
+                <li>Завтрак</li>
+                <li>Обед</li>
+                <li>Ужин</li>
+            </ul>
+        </li>  
+        <li>Среда
+            <ul>
+                <li>Завтрак</li>
+                <li>Обед</li>
+                <li>Ужин</li>
+            </ul>
+        </li>  
+        <li>Четверг
+            <ul>
+                <li>Завтрак</li>
+                <li>Обед</li>
+                <li>Ужин</li>
+            </ul>
+        </li>  
+        <li>Пятница<ul>
+            <li>Завтрак</li>
+            <li>Обед</li>
+            <li>Ужин</li>
+        </ul>
+    </li>  
+        <li>Суббота<ul>
+            <li>Завтрак</li>
+            <li>Обед</li>
+            <li>Ужин</li>
+        </ul>
+    </li>  
+    </ul>
+</body>
+</html>
